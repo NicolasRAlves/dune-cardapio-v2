@@ -2,8 +2,8 @@ const menuData = {
     combos: {
         title: 'Combos',
         items: [
-            { name: 'Combo Beefeater', description: '4 gelo + red bull sabores', price: '240,00', image: 'https://images.unsplash.com/photo-1623933439938-5282a9310860?q=80&w=400' },
-            { name: 'Combo Beefeater Pink', description: '4 gelo + red bull sabores', price: '220,00', image: 'https://images.unsplash.com/photo-1630422741933-7a28579649e3?q=80&w=400' },
+            { name: 'Combo Beefeater', description: '4 gelo + red bull sabores', price: '240,00', image: 'https://acdn-us.mitiendanube.com/stores/001/043/810/products/8e65fbc07563752fc26e3cde05c8b76a-351af3b532b050837d17527849673487-640-0.jpg' },
+            { name: 'Combo Beefeater Pink', description: '4 gelo + red bull sabores', price: '220,00', image: 'https://cdn.awsli.com.br/1231/1231345/produto/257050166/design-sem-nome--9---1--kvarm29jvt.png' },
             { name: 'Combo Tanqueray', description: '4 gelo + red bull sabores', price: '250,00', image: 'https://images.unsplash.com/photo-1624588238213-95b878343714?q=80&w=400' },
             { name: 'Combo Absolut', description: '4 gelo + red bull sabores', price: '210,00', image: 'https://images.unsplash.com/photo-1569529940125-27c395744a2b?q=80&w=400' },
             { name: 'Combo Ciroc Blue', description: '4 gelo + red bull sabores', price: '330,00', image: 'https://images.unsplash.com/photo-1614314890214-1a29a18063ea?q=80&w=400' },
@@ -30,9 +30,11 @@ const menuData = {
     drinks: {
         title: 'Drinks',
         items: [
-            { name: 'Caipirinha', description: 'Morango, Kiwi, Maracujá, Limão, Frutas Vermelhas', price: '20,00', image: 'https://images.unsplash.com/photo-1599633833705-a582b1575a5e?q=80&w=400' },
-            { name: 'Caipiroska', description: 'Morango, Kiwi, Maracujá, Limão, Frutas Vermelhas', price: '25,00', image: 'https://images.unsplash.com/photo-1634469035992-3a15f8a2b7b3?q=80&w=400' },
-            { name: 'Sakerinha', description: 'Morango, Kiwi, Maracujá, Limão, Frutas Vermelhas', price: '25,00', image: 'https://images.unsplash.com/photo-1614313519810-25a58c2f2412?q=80&w=400' },
+            // Apenas Caipirinha tem imagem. A Caipiroska virá como item de lista.
+            { name: 'Caipirinha', description: 'Cachaça com Morango, Kiwi, Maracujá, Limão ou Frutas Vermelhas', price: '20,00', image: 'img/caipirinha.jpg' },
+            { name: 'Caipiroska', description: 'Vodka com Morango, Kiwi, Maracujá, Limão ou Frutas Vermelhas', price: '25,00' },
+            { name: 'Sakeirinha', description: 'Vodka com Morango, Kiwi, Maracujá, Limão ou Frutas Vermelhas', price: '25,00' },
+            // SAKERINHA REMOVIDA
             { name: 'Dune Kiss', description: 'Gin, licor 43, limão siciliano e mel infusionado', price: '35,00', image: 'https://images.unsplash.com/photo-1626701533938-c00d418151b6?q=80&w=400', featured: 'Sugestão da Casa' },
             { name: 'Sabi Night', description: 'Gin, xarope de rosas francesas, morango e limão siciliano.', price: '30,00', image: 'https://images.unsplash.com/photo-1597599986288-2ff81b6c08c8?q=80&w=400' },
             { name: 'Whiskey Sour', description: 'Whiskey bourbon, limão siciliano, xarope de açúcar e angostura.', price: '25,00', image: 'https://images.unsplash.com/photo-1622464482386-536310f84474?q=80&w=400' },
@@ -79,14 +81,19 @@ const menuData = {
     cervejas: {
         title: 'Cervejas',
         items: [
-            { name: 'Amstel 600 ML', price: '14,00' },
-            { name: 'Brahma 600 ML', price: '14,00' },
-            { name: 'Original 600 ML', price: '14,00' },
-            { name: 'Heineken 600 ML', price: '17,00' },
-            { name: 'Budweiser Long Neck', price: '10,00' },
-            { name: 'Corona Long Neck', price: '14,00' },
-            { name: 'Heineken Long Neck Zero', price: '12,00' },
-            { name: 'Skol Beats', price: '10,00' },
+            // BALDES ADICIONADOS COM FOTO
+            { name: 'Balde Original (6 Unidades)', price: '75,00', image: 'URL_DA_SUA_FOTO_BALDE_ORIGINAL.jpg' },
+            { name: 'Balde Heineken (6 Unidades)', price: '90,00', image: 'URL_DA_SUA_FOTO_BALDE_HEINEKEN.jpg' },
+            { name: 'Balde Corona (6 Unidades)', price: '75,00', image: 'URL_DA_SUA_FOTO_BALDE_CORONA.jpg' },
+            // Itens individuais agora também tem foto para manter o layout consistente
+            { name: 'Amstel 600 ML', price: '14,00', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-8X0V1Kz8Y-j9qjG6e_p9e_8Kz-v9z7mQ&s' },
+            { name: 'Brahma 600 ML', price: '14,00', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6-o3p3bXy_w_XwZ5Fq-hN3_Qj5K_YlH3oA&s' },
+            { name: 'Original 600 ML', price: '14,00', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhW6G6C_x1Z9Yw_H9_z4Rk-bN_uP9o-Y9oA&s' },
+            { name: 'Heineken 600 ML', price: '17,00', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Y9q-Z9-r9x_y_H9n8Z6q-eR7hL_I3P_g&s' },
+            { name: 'Budweiser Long Neck', price: '10,00', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz3y_8Z5f9Y-j9qjG6e_p9e_8Kz-v9z7mQ&s' },
+            { name: 'Corona Long Neck', price: '14,00', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_k5r_J0H7_x_O-Z_f_I3c_x_YlH3oA-bN_uP9o-Y9oA&s' },
+            { name: 'Heineken Long Neck Zero', price: '12,00', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9o_Y_l_XwZ5Fq-hN3_Qj5K_YlH3oA-bN_uP9o-Y9oA&s' },
+            { name: 'Skol Beats', price: '10,00', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_k5r_J0H7_x_O-Z_f_I3c_x_YlH3oA-bN_uP9o-Y9oA&s' },
         ]
     },
     roshs: {
@@ -111,9 +118,7 @@ const menuData = {
     }
 };
 
-// ===================================================================
-// ===== NÃO É NECESSÁRIO EDITAR NADA ABAIXO DESTA LINHA =========
-// ===================================================================
+
 document.addEventListener('DOMContentLoaded', function () {
     const menuContainer = document.getElementById('menu-container');
     const searchInput = document.getElementById('search-input');
@@ -146,6 +151,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
             let categoryHTML = `<h2 class="text-3xl font-bold text-gold mb-6 border-b-2 border-gold/20 pb-2">${category.title}</h2>`;
 
+            const hasImageItems = category.items.some(item => item.image);
+            const itemsContainerClass = hasImageItems ? 'grid grid-cols-1 gap-4' : 'flex flex-col';
+
             const itemsHTML = category.items.map(item => {
                 itemDelay++;
                 const animationClass = category.collapsible ? '' : 'animated-item';
@@ -153,40 +161,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 if (item.image) {
                     return `
-                            <div class="product-card bg-[#222] rounded-lg overflow-hidden flex items-center transition-transform duration-300 hover:scale-105 ${animationClass}" ${animationStyle} data-name="${item.name}" data-description="${item.description || ''}">
-                                <img src="${item.image}&auto=format&fit=crop" alt="${item.name}" class="w-28 h-28 object-cover">
-                                <div class="p-4 flex-1 relative">
-                                    ${item.featured ? `<span class="absolute top-0 right-0 bg-gold text-black text-xs font-semibold px-2 py-1 rounded-bl-lg">${item.featured}</span>` : ''}
-                                    <h3 class="product-name text-xl font-semibold">${item.name}</h3>
-                                    <p class="product-desc text-sm text-gray-400 mt-1">${item.description || ''}</p>
-                                    <p class="text-lg font-bold text-gold mt-2">R$ ${item.price}</p>
-                                </div>
-                            </div>`;
+                        <div class="product-card bg-[#222] rounded-lg overflow-hidden flex items-center transition-transform duration-300 hover:scale-105 ${animationClass}" ${animationStyle} data-name="${item.name}" data-description="${item.description || ''}">
+                            <img src="${item.image}" alt="${item.name}" class="w-28 h-28 object-cover">
+                            <div class="p-4 flex-1 relative">
+                                ${item.featured ? `<span class="absolute top-0 right-0 bg-gold text-black text-xs font-semibold px-2 py-1 rounded-bl-lg">${item.featured}</span>` : ''}
+                                <h3 class="product-name text-xl font-semibold">${item.name}</h3>
+                                <p class="product-desc text-sm text-gray-400 mt-1">${item.description || ''}</p>
+                                <p class="text-lg font-bold text-gold mt-2">R$ ${item.price}</p>
+                            </div>
+                        </div>`;
                 } else {
                     return `
-                            <div class="product-list-item flex justify-between items-center py-3 border-b border-gray-800 ${animationClass}" ${animationStyle} data-name="${item.name}" data-description="${item.description || ''}">
-                                <div>
-                                    <h3 class="product-name text-lg font-medium">${item.name}</h3>
-                                    ${item.description ? `<p class="product-desc text-sm text-gray-400 mt-1">${item.description}</p>` : ''}
-                                </div>
-                                <p class="text-lg font-bold text-gold flex-shrink-0 ml-4">R$ ${item.price}</p>
-                            </div>`;
+                        <div class="product-list-item flex justify-between items-center py-3 border-b border-gray-800 ${animationClass}" ${animationStyle} data-name="${item.name}" data-description="${item.description || ''}">
+                            <div>
+                                <h3 class="product-name text-lg font-medium">${item.name}</h3>
+                                ${item.description ? `<p class="product-desc text-sm text-gray-400 mt-1">${item.description}</p>` : ''}
+                            </div>
+                            <p class="text-lg font-bold text-gold flex-shrink-0 ml-4">R$ ${item.price}</p>
+                        </div>`;
                 }
             }).join('');
 
             if (category.collapsible) {
                 sectionElement.innerHTML = `
-                        <details class="group" open>
-                            <summary class="flex justify-between items-center list-none">
-                                <h2 class="text-3xl font-bold text-gold mb-2 pb-2">${category.title}</h2>
-                                <span class="chevron text-gold transform group-open:rotate-90 transition-transform">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
-                                </span>
-                            </summary>
-                            <div class="mt-4 space-y-2">${itemsHTML}</div>
-                        </details>`;
+                    <details class="group" open>
+                        <summary class="flex justify-between items-center list-none cursor-pointer">
+                            <h2 class="text-3xl font-bold text-gold mb-2 pb-2">${category.title}</h2>
+                            <span class="chevron text-gold transform group-open:rotate-90 transition-transform">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+                            </span>
+                        </summary>
+                        <div class="mt-4 space-y-2">${itemsHTML}</div>
+                    </details>`;
             } else {
-                sectionElement.innerHTML = categoryHTML + `<div class="grid grid-cols-1 gap-4">${itemsHTML}</div>`;
+                 sectionElement.innerHTML = categoryHTML + `<div class="${itemsContainerClass}">${itemsHTML}</div>`;
             }
             menuContainer.appendChild(sectionElement);
         }
