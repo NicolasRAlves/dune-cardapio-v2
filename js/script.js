@@ -22,8 +22,9 @@ const menuData = {
         title: 'Porções',
         items: [
             { name: 'Batata Frita', description: '500g', price: '30,00' },
+            { name: 'Batata Frita C Calabresa', description: '500g', price: '40,00' },
             { name: 'Batata Frita C/ Cheddar e Bacon', description: '500g', price: '45,00', image: 'img/batata.jpg' },
-            { name: 'Calabresa', description: '500g', price: '35,00', image: 'img/calabresa.jpg' },
+            { name: 'Calabresa', description: '500g', price: '40,00', image: 'img/calabresa.jpg' },
             { name: 'Frango a Passarinho', description: '500g', price: '35,00', image: 'img/frango.jpg' },
         ]
     },
